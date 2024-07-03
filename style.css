@@ -1,0 +1,63 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightskyblue;
+
+}
+.calculator
+{
+    display: grid;
+    position: relative;
+}
+.calculator input
+{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 11px;
+    font-size: 19px;
+}
+.calculator span
+{
+    display: grid;
+    width: 80px;
+    height: 80px;
+    background: rgb(250, 174, 174);
+    text-align: center;
+    place-items: center;
+    border: 1px solid rgba(9, 9, 9, 0.2);
+}
+
+.calculator span:active
+{
+    background-color: rgb(139, 228, 238);
+}
+.calculator span.ClearData
+{
+    grid-column: span 2;
+    width: 160px;
+    background-color: rgb(248, 219, 145);
+}
+.calculator span.Add
+{
+    grid-row: span 2;
+    height:160px;
+    background-color: rgb(248, 219, 145);
+}
+.calculator span.Equal
+{
+
+    background-color: #bc9eb5;
+}
